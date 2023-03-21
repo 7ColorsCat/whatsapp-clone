@@ -42,9 +42,8 @@ export default function ChatList(props) {
         <Stack
             spacing={0}
             pr={1}
-            divider={
-                <StackDivider w={'82%'} {...props} alignSelf={'flex-end'} />
-            }
+            divider={<StackDivider w={'82%'} alignSelf={'flex-end'} />}
+            {...props}
         >
             {chatData.map((item, index) => (
                 <Chat

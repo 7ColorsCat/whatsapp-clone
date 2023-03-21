@@ -1,16 +1,16 @@
-import { Box } from '@chakra-ui/react'
-import Header from './components/header'
-import SearchPanel from './components/search-panel'
-import ChatList from './components/chat-list'
+import { Box, Flex } from '@chakra-ui/react'
+import Header from './header'
+import SearchPanel from './search-panel'
+import ChatList from './chat-list'
 
-function App() {
+export default function LeftPanel(props) {
     return (
-        <Box>
-            <Header />
-            <SearchPanel />
-            <ChatList />
-        </Box>
+        <Flex direction={'column'} w={{ md: '30%' }} {...props}>
+            <Box>
+                <Header />
+                <SearchPanel />
+            </Box>
+            <ChatList flex={1} overflow="auto" />
+        </Flex>
     )
 }
-
-export default App

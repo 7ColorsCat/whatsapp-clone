@@ -10,7 +10,7 @@ import { FilterIcon, SearchIcon } from '../assets/icons'
 
 export default function SearchPanel() {
     return (
-        <HStack px={4} py={2}>
+        <HStack px={4} py={2} spacing={2} bg={'red.400'}>
             <InputGroup>
                 <InputLeftElement
                     children={<SearchIcon />}
